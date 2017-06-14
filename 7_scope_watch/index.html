@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"
+      ng-app="myApp">
+<head>
+	<title>Scope</title>
+	<link href="../libs/bootstrap/css/bootstrap.min.css"
+	      rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <div ng-controller="BookController">
+    <h3>Some of the popular books from {{publisher}}</h3>
+    My Wish List Count: {{wishListCount}}
+    <ul>
+      <li ng-repeat="book in books">
+         {{book}}. <a href="#" ng-click="addToWishList(book)">Add to Wish List</a> </li>
+    </ul>
+  </div>
+
+</div>
+
+<script src="../libs/angular/angular.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

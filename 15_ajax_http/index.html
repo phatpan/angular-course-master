@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"
+      ng-app="myApp">
+<head>
+	<title>Scope</title>
+	<link href="../libs/bootstrap/css/bootstrap.min.css"
+	      rel="stylesheet">
+</head>
+
+<body>
+
+
+<div class="container" ng-controller="TestController">
+
+  <button ng-click="getData()">Load Data using blogService</button>
+  <button ng-click="getData2()">Load Data  using blogService2</button>
+  <ul ng-show="data">
+    <li ng-repeat="post in data"> {{ post.title }}</li>
+  </ul>
+
+  {{ data | json }}
+</div>
+
+<script src="../libs/angular/angular.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

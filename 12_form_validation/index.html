@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<title>Controllers</title>
+	<link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+</head>
+
+<body ng-controller="RegisterController">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand"
+			   href="/">Controllers
+			</a>
+		</div>
+		,
+	</div>
+</nav>
+
+<div class="container main-content">
+
+	<form id="myForm" ng-submit="register()">
+		<div class="form-group">
+			<label for="name">Name</label>
+			<input type="text"
+			       class="form-control"
+			       id="name">
+		</div>
+
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input type="email"
+			       class="form-control"
+			       id="email">
+		</div>
+
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary">Register
+			</button>
+		</div>
+	</form>
+
+  <pre>
+
+  </pre>
+</div>
+
+<script src="../libs/angular/angular.min.js"></script>
+<script src="main.js"></script>
+
+
+</body>
+</html>
